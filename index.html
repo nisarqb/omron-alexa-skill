@@ -10,7 +10,9 @@
         }
 	
 	//self.location = redirectUrl + "?vendorId=M2JS3NMPQGJUL6" + "&state=" + queryValues.session_state + "&code=" + queryValues.code;
-	self.location = redirectUrl + "?state=" + queryValues.session_state + "&code=" + queryValues.code;
+	//self.location = redirectUrl + "?state=" + queryValues.session_state + "&code=" + queryValues.code;
+	self.location = "https://www.getpostman.com/oauth2/callback" + "?state=" + queryValues.session_state + "&code=" + queryValues.code;
+
 
 </script>
 </head>
