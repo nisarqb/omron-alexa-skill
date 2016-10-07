@@ -1,13 +1,14 @@
 <html>
 <head>
 <script>
-	var redirectUrl = 'https://pitangui.amazon.com/api/skill/link/M2JS3NMPQGJUL6';
-	//self.location = 'https://pitangui.amazon.com/api/skill/link/M2JS3NMPQGJUL6';
+	//var redirectUrl = 'https://pitangui.amazon.com/api/skill/link/M2JS3NMPQGJUL6';
+	var redirectUrl = 'https://pitangui.amazon.com/spa/skill/account-linking-status.html';	
+
 	var queryValues = getQueryParameters();
 	function getQueryParameters(str) {
             return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
-          }
-	//self.location = redirectUrl + "?state=" + queryValues.session_state + "&code=" + queryValues.code  + "&token_type=Bearer";
+        }
+	self.location = redirectUrl + "?vendorId=M2JS3NMPQGJUL6" + "&state=" + queryValues.session_state + "&code=" + queryValues.code;
 
 </script>
 </head>
